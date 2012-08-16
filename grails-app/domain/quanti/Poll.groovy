@@ -2,13 +2,14 @@ package quanti
 
 class Poll {
 	String title
-	String summary
+	String summary //peque–a descripcion
 	Date dateCreated
 	Date lastUpdated
 	List<Option> options
+	List<String> tags
 	
     static constraints = {
-		title()
+		title(nullable:false)
 		summary(maxSize:1000)
 		dateCreated()
 		lastUpdated()

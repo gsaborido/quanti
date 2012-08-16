@@ -2,7 +2,7 @@ package quanti
 
 class PollController {
 	def scaffold = Poll
-	def questionservice
+	def loginService
 	
 	
 	def addPoll(){
